@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'IntelOneMono-Regular';
+    src: url(fonts/IntelOneMono-Regular.ttf) format('truetype')
+}
+
+header {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #f0f0f0;
+    font-family: 'IntelOneMono-Regular', sans-serif;
+}
+
+header a {
+    text-decoration: none;   
+    color: #333;             
+    margin: 0 15px;          
+    font-weight: bold;
+}
+
+#a {
+    font-size: 50px;
+}
+
+#logo {
+    display: flex;
+    justify-content: left;
+}
+
+#hlogo {
+    width: 10%;
+    height: auto;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 90px; /* расстояние между картинками */
+    padding: 20px 0;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.images img {
+    width: 30%;        /* три картинки по 30% ширины */
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+#shortinfo {
+    font-family: 'IntelOneMono-Regular';
+    font-size: 30px;
+    background-color: antiquewhite;
+    padding-left: 20px;
+}
+
+#study {
+    font-family: 'IntelOneMono-Regular';
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.lists {
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+.spec {
+    font-family: 'IntelOneMono-Regular';
+    font-size: 25px;
+    padding-left: 1px;
+}
