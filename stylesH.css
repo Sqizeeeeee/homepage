@@ -8,6 +8,7 @@ header {
     padding: 15px 30px;
     background-color: #f0f0f0;
     font-family: 'IntelOneMono-Regular', sans-serif;
+    transition: color 0.3s ease, font-size 0.3s ease 0.2s;
 }
 
 header a {
@@ -15,6 +16,13 @@ header a {
     color: #333;             
     margin: 0 15px;          
     font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+header a:hover {
+    color: cornflowerblue;
+    font-size: 35px;
+    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 #a {

@@ -20,10 +20,13 @@ header a {
     color: #333;             
     margin: 0 15px;          
     font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 header a:hover {
-    color: #007bff
+    color: cornflowerblue;
+    font-size: 35px;
+    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 #firstText {

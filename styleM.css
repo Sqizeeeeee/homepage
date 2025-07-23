@@ -8,6 +8,11 @@
     src: url(fonts/slogan.ttf);
 }
 
+body {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 header {
     text-align: center;
     padding: 15px 30px;
@@ -20,6 +25,13 @@ header a {
     color: #333;             
     margin: 0 20px;          
     font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease 0.2s;
+}
+
+header a:hover {
+    color: cornflowerblue;
+    font-size: 35px;
+    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 #logo {
@@ -69,14 +81,48 @@ header a {
     font-family: 'Raleway', sans-serif;
     font-size: 45px;
     margin-left: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: azure;
 }
 
 .list {
     display: flex;
     justify-content: space-between;
+    background-color: beige;
 }
 
 .spec {
-    font-size: 25px;
+    font-size: 40px;
     font-family: 'Raleway';
+    line-height: 1.7;
+}
+
+#imagenearlist {
+    border-radius: 40px;
+}
+
+.location {
+    display: flex;
+    align-items: left;
+    gap: 8px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+#locationLocIcon {
+    height: 25px;
+    width: auto;
+}
+
+#locationText {
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#locationFlag {
+    height: 25px;
+    width: auto;
 }
