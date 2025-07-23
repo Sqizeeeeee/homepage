@@ -37,6 +37,7 @@ header a {
 #firstText {
     font-size: 60px;
     margin-left: 30px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #slogan {
@@ -56,4 +57,26 @@ header a {
     max-width: 30%;
     height: auto;
     border-radius: 25px;
+}
+
+#mainFirstText {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+#study {
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    margin-left: 30px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spec {
+    font-size: 25px;
+    font-family: 'Raleway';
 }
