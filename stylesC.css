@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'slogan';
+    src: url(fonts/slogan.ttf);
+}
+
+@font-face {
+    font-family: 'Camb';
+    src: url(fonts/camb.ttf) format('truetype')
+}
+
+body {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header a {
+    text-decoration: none;   
+    color: #333;             
+    margin: 0 20px;          
+    font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease 0.2s;
+}
+
+header a:hover {
+    color: cornflowerblue;
+    font-size: 35px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+#logo {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0px;
+}
+
+#firstText {
+    font-size: 63px;
+    margin-left: 30px;
+    font-family: 'Camb';
+}
+
+#slogan {
+    font-size: 50px;
+    font-family: 'slogan';
+    margin-left: 50px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    max-width: 30%;
+    max-height: auto;
+}
+
+.mainTextF {
+    font-family: 'Camb', sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.study {
+  font-family: 'Camb', sans-serif;
+  font-size: 45px;
+  margin-left: 10px;
+  margin-top: 0px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: azure;
+  display: inline-block; /* <— вот это главное */
+}
+
+.ListandText {
+  display: flex;
+  gap: 40px; /* расстояние между списком и текстом */
+  align-items: flex-start;
+}
+
+#cambridgeList {
+  flex: 0 0 30%;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 18px;
+  list-style: disc;
+  font-family: 'Camb', sans-serif;
+}
+
+#cambridgeText {
+  flex: 1; /* оставшиеся 70% */
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Camb', sans-serif;
+}
+
+#cambridgeText p {
+  margin-bottom: 1em;
+}
+
+.spec {
+    font-size: 35px;
+    margin-left: 20px;
+    line-height: 45px;
+}
+
+.firstLeftText {
+  font-size: 25px;
+  margin-top: 0px;
+  border: 2px solid black;
+  padding: 0px 8px;
+  border-radius: 20px;
+  background-color: #dee1fb;
+  transition: 
+    color 0.3s ease, 
+    font-size 0.3s ease 0.2s,
+    box-shadow 0.3s ease, 
+    transform 0.3s ease;
+}
+
+.firstLeftText:hover {
+  font-size: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* мягкая тень */
+  transform: translateY(-5px); /* приподнять вверх */
+}
+
+.seckondLeftText {
+    font-size: 25px;
+    margin-top: 0px;
+    border: 2px solid black; /* чёрная рамка */
+    padding: 0px 8px;        /* внутренние отступы, чтобы было красиво */
+    border-radius: 20px;
+    background-color: #fde5e5;
+    transition: 
+      color 0.3s ease, 
+      font-size 0.3s ease 0.2s,
+      box-shadow 0.3s ease, 
+      transform 0.3s ease;
+}
+
+.seckondLeftText:hover {
+    font-size: 30px;
+    box-shadow: 0 8px 16px rgba(244, 166, 166, 0.2); /* мягкая тень */
+    transform: translateY(-5px); /* приподнять вверх */
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-left: 40px; /* смещение вправо */
+  font-size: 18px;
+  gap: 10px; /* базовое расстояние между элементами */
+}
+
+.locationLocIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 6px; /* небольшой отступ после иконки */
+  background-color: white;
+}
+
+.locationLoc {
+  margin: 0;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Camb';
+}
+
+.locationText {
+  margin: 0 0 0 0; /* справа — чуть больше пробел перед флагом */
+  font-size: 30px;
+  font-family: 'Camb';
+}
+
+.flag {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  background-color: white;
+}
