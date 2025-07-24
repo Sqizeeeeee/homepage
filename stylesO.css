@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'slogan';
+    src: url(fonts/slogan.ttf);
+}
+
+@font-face {
+    font-family: 'Oxf';
+    src: url(fonts/oxf.ttf);
+}
+
+body {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header a {
+    text-decoration: none;   
+    color: #333;             
+    margin: 0 20px;          
+    font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease 0.2s;
+}
+
+header a:hover {
+    color: cornflowerblue;
+    font-size: 35px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+#logo {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0px;
+}
+
+#image {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+}
+
+#firstText {
+    font-size: 60px;
+    margin-left: 30px;
+    font-family: 'Oxf';
+}
+
+#slogan {
+    font-size: 50px;
+    font-family: 'slogan';
+    margin-left: 300px;
+
+}
+
+.images {
+    display: flex;
+    justify-content: left;
+    gap: 55px;
+    margin-left: 55px;
+}
+
+.img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 25px;
+}
+
+#mainFirstText {
+    font-size: 30px;
+    font-family: 'Oxf';
+}
+
+#study {
+    font-size: 45px;
+    font-family: 'Oxf';
+}
+
+.mainTextListAndPhotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Список */
+.mainTextList ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+  font-size: 50px;
+  line-height: 1.4;
+}
+
+li {
+    margin-top: 20px;
+    font-family: 'Oxf';
+}
+
+/* Блок с фотографиями */
+.mainTextPhotos {
+  display: flex;
+  gap: 30px; /* расстояние между левой и правой колонкой */
+}
+
+/* Левая и правая колонка фото */
+.leftPhotos,
+.rightPhotos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* расстояние между картинками по вертикали */
+}
+
+/* Картинки */
+.img1 {
+  max-width: 500px;
+  max-height: 500x;
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* сохраняет пропорции без обрезки */
+  border-radius: 25px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-left: 40px; /* смещение вправо */
+  font-size: 18px;
+  gap: 10px; /* базовое расстояние между элементами */
+}
+
+.locationLocIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 6px; /* небольшой отступ после иконки */
+  background-color: white;
+}
+
+.locationLoc {
+  margin: 0;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Oxf';
+}
+
+.locationText {
+  margin: 0 20px 0 0; /* справа — чуть больше пробел перед флагом */
+  font-size: 30px;
+  font-family: 'Oxf';
+}
+
+.flag {
+  width: 24px;
+  height: auto;
+  object-fit: contain;
+  background-color: white;
+}
