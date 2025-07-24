@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'quiz';
+    src: url(fonts/quiz.ttf);
+}
+
+header {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header a {
+    text-decoration: none;   
+    color: #333;             
+    margin: 0 20px;          
+    font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease 0.2s;
+}
+
+header a:hover {
+    color: cornflowerblue;
+    font-size: 35px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+main {
+    font-family: 'quiz';
+}
+
+#text {
+    font-size: 40px;
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: center;
+    border: #333 solid;
+    background-color: azure;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.question-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.question {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 40%;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.question-text {
+    font-size: 30px;
+}
+
+.question.colored {
+    background-color: #fddcdc;
+}
+
+.question.notcolored {
+    background-color: #dceefd;
+}
+
+.answer {
+    padding: 10px 20px;
+    margin: 5px; /* убираем внешний отступ, который влияет на позицию */
+    border: none;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.answer:hover {
+    background-color: #c783f8;
+}
+
+
+.small-button {
+    font-size: 22px;
+}
+
+.large-button {
+    font-size: 22px;
+}
+
+.answer.correct {
+    background-color: #98ff9c;
+    color: white;
+    border: 1px solid #98ff9c;
+    color: black;
+}
+
+.answer.incorrect {
+    background-color: #ff9790;
+    color: white;
+    border: 1px solid #ff9790;
+    color: black;
+}
