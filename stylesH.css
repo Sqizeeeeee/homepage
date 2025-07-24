@@ -3,6 +3,11 @@
     src: url(fonts/IntelOneMono-Regular.ttf) format('truetype')
 }
 
+@font-face {
+    font-family: 'slogan';
+    src: url(fonts/slogan.ttf);
+}
+
 header {
     text-align: center;
     padding: 15px 30px;
@@ -26,7 +31,13 @@ header a:hover {
 }
 
 #a {
+    font-size: 65px;
+}
+
+#slogan {
     font-size: 50px;
+    font-family: 'slogan';
+    margin-left: 50px;
 }
 
 #logo {
@@ -78,4 +89,40 @@ header a:hover {
     font-family: 'IntelOneMono-Regular';
     font-size: 25px;
     padding-left: 1px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-left: 40px; /* смещение вправо */
+  font-size: 18px;
+  gap: 10px; /* базовое расстояние между элементами */
+}
+
+.locationLocIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 6px; /* небольшой отступ после иконки */
+  background-color: white;
+}
+
+.locationLoc {
+  margin: 0;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Camb';
+}
+
+.locationText {
+  margin: 0 0 0 0; /* справа — чуть больше пробел перед флагом */
+  font-size: 30px;
+  font-family: 'Camb';
+}
+
+.flag {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  background-color: white;
 }
