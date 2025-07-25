@@ -11,6 +11,7 @@
 header {
     text-align: center;
     padding: 15px 30px;
+    font-size: 20px;
     background-color: #f0f0f0;
     font-family: 'IntelOneMono-Regular', sans-serif;
 }
@@ -41,7 +42,7 @@ header a:hover {
     font-family: 'Quicksand-Light';
     font-size: 70px;
     text-align: center;
-    color: #ffd700;
+    color: #0099ff;
     margin-bottom: 10px;
 }
 
@@ -121,7 +122,7 @@ img {
 .reason {
   background-color: #f8f8f8;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-bottom: 30px;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -134,24 +135,26 @@ img {
 }
 
 .headtext {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #1a1a1a;
   margin-bottom: 5px;
 }
 
 .maintext {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   color: #1a1a1a;
 }
 
 #top10 {
+    padding-top: 10px;
     padding-left: 30px;
     font-size: 30px;
 }
 
 #topText {
+  padding-bottom: 10px;
     padding-left: 30px;
     font-size: 20px;
 }
