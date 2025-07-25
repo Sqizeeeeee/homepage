@@ -7,7 +7,7 @@
     font-family: 'Quicksand-Light';
     src: url(fonts/Quicksand-Light.ttf) format('truetype');
 }
-
+/*
 header {
     text-align: center;
     padding: 15px 30px;
@@ -29,17 +29,57 @@ header a:hover {
     font-size: 35px;
     transition: color 0.3s ease, font-size 0.3s ease;
 }
+*/
+
+.navbar {
+    font-family: 'IntelOneMono-Regular', sans-serif;
+    font-size: 30px;
+}
+
+/* Центрируем бренд и меню */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: flex-end; /* Центрирует содержимое */
+    align-items: center;
+    gap: 50px; /* Расстояние между логотипом и меню */
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Навигация как flex с пробелами */
+.navbar-nav {
+    display: flex;
+    gap: 30px; /* Расстояние между пунктами меню */
+    margin-left: 450px; /* Убираем сдвиги */
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 0; /* Убираем боковые паддинги для равномерных пробелов */
+    color: white;
+    margin-right: 30px;
+    transition: font-size 0.2s ease, color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: cornflowerblue;
+    font-size: 22px;
+}
 
 #firstText {
-    padding: 40px;
     text-align: center;
     text-decoration: none;
     background-color: rgb(248, 250, 252);
-
 }
 
 #firstText h3 {
-    font-family: 'Quicksand-Light';
+    font-family: 'Quicksand-Light', sans-serif;
     font-size: 70px;
     text-align: center;
     color: #0099ff;
@@ -54,29 +94,25 @@ header a:hover {
 }
 
 #uniLists {
-    display: flex;
-    justify-content: space-around;
     padding: 20px;
 }
 
 #uniLists div {
-    width: 45%;
     background-color: #ffffff;
     padding: 15px;
-    border: 1px solid #ccc;
     border-radius: 10px;
+    margin-bottom: 20px; /* Чтобы не слипались по вертикали */
 }
 
 #uniLists a {
-    text-decoration: none;
+    font-size: 20px;
     color: black;
-    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 #uniLists a:hover {
-    text-decoration: none;
-    color: rgb(38, 14, 255);
-    font-size: 30px;
+    color: cornflowerblue;
 }
 
 .uni-icon {
@@ -87,9 +123,9 @@ header a:hover {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
 }
 
 #photo1 {
@@ -101,50 +137,46 @@ img {
 }
 
 .top_photos {
-    
     display: flex;
     justify-content: space-around;
     padding: 20px 0px;
 }
 
 #reasons {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 40px 20px;
+    padding: 40px 20px;
 }
 
 .reasons-left,
 .reasons-right {
-  width: 48%;
+    width: 48%;
 }
 
 .reason {
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .reason:hover {
-  background-color: #e6f7ff; /* светло-голубой — можно поменять */
-  transform: translateY(-5px); /* чуть поднимается */
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    background-color: #e6f7ff; /* светло-голубой */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .headtext {
-  font-size: 25px;
-  font-weight: bold;
-  color: #1a1a1a;
-  margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 5px;
 }
 
 .maintext {
-  font-size: 20px;
-  line-height: 1.6;
-  color: #1a1a1a;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #1a1a1a;
 }
 
 #top10 {
@@ -154,7 +186,7 @@ img {
 }
 
 #topText {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
     padding-left: 30px;
     font-size: 20px;
 }
@@ -164,25 +196,25 @@ img {
 }
 
 #beforeLists {
-  text-align: center; /* Центрируем div */
+    text-align: center;
 }
 
 #usaUni p,
 #ukUni p {
-  font-size: 26px; /* изменяй размер как нужно */
-  font-weight: bold;
-  font-family: 'IntelOneMono-Regular', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'IntelOneMono-Regular', sans-serif;
 }
 
 #dv {
-  display: inline-block;              /* Размер блока зависит от содержимого */
-  background-color: #f0f0f0;          /* Цвет фона */                /* Отступы вокруг текста */
-  border-radius: 10px;                /* Скругление углов (по желанию) */
-  margin: 20px auto;  
-  padding: 10px 8px;                /* Отступы и центрирование */
-  font-size: 50px;
-  font-family: 'Quicksand-Light', sans-serif;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Лёгкая тень */
+    display: inline-block;
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    padding: 10px 8px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-family: 'Quicksand-Light', sans-serif;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .footer {
