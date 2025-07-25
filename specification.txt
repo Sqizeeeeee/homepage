@@ -1,0 +1,22 @@
+HTML tags used:
+1. <div>
+2. <section>
+3. <p>
+4. <img>
+5. <ul>
+6. <a>
+7. <nav>
+8. <strong>
+9. <header>
+10. <footer>
+
+CSS properties used:
+1. margin
+2. padding
+3. display
+4. font-family
+5. background-color
+
+JavaScript was used to create a small interactive quiz with correct and incorrect answer options.
+
+Bootstrap was used to style the header and to display a list of universities at the bottom of the page.
